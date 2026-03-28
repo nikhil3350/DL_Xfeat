@@ -16,6 +16,15 @@ This repository contains training and evaluation code for two XFeat variants tra
 | **Baseline** | Original XFeat | 46.0 | ~277k |
 | **Modified** | + InstanceNorm2d + SE Attention | 41.4 | ~279k |
 
+---
+### Match Comparison — Baseline vs Modified
+![Baseline 840 matches](assest/matches_baseline.png)
+*Baseline — 840 matches*
+
+![Modified 975 matches](assest/matches_modified.png)  
+*Modified — 975 matches (+16%)*
+
+---
 ### Modifications Made
 
 **1. InstanceNorm2d instead of BatchNorm2d**  
@@ -97,6 +106,10 @@ The modified model produces more matches per pair on the synthetic eval, suggest
 
 ---
 
+### Real-time Webcam Demo
+![Real-time matching demo](assest/webcam_demo.png)
+
+---
 ## Citation
 ```bibtex
 @inproceedings{potje2024xfeat,
